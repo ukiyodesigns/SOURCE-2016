@@ -764,26 +764,23 @@
                     <div class="col-sm-10 col-sm-offset-1">
                         <!-- End Team v2 -->
                         {% assign count = 1 %}
-                        {% for senior in site.data.seniors %}
-                            {% assign check = count | modulo:3 %}
+                        {% for senior in site.data.seniors2017 %}
+                            {% assign check = count | modulo:2 %}
                             {% if check == 1 %}
                                 <div class="row senior-row-padding">
                             {% endif %}
-                            {% if count == 10 %}
-                                <div class="col-xs-4 col-sm-offset-4 xs-full-width">
-                            {% else %}
-                            <div class="col-xs-4 xs-full-width">
-                            {% endif %}
+                            <div class="col-xs-6 xs-full-width">
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
-                                    <div class="team-v2 wow fadeInLeft" data-wow-duration=".2" data-wow-delay=".2s">
+                                    <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
                                         <div class="team-v2-img-gradient">
-                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/headshots/seniors/{{ senior.name | downcase | replace: ' ','-' }}-headshot{{ senior.extension }}" alt="">
+                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/headshots/seniors/{{ senior.photo }}" alt="">
                                         </div>
                                         <div class="team-v2-content">
                                             <div class="team-v2-center-align">
                                                 <h4 class="team-v2-member">{{ senior.name }}</h4>
-                                                <span class="team-v2-member-position">{{ senior.job }} - {{ senior.job-title }}</span>
+                                                <span class="team-v2-member-position">{{ senior.team }} - {{ senior.position }}</span>
+                                                <span class="team-v2-member-position">{{ senior.industry }} - {{ senior.company }}</span>
                                             </div>
                                         </div>
                                         <a class="team-v2-link" href="{{ senior.linkedin }}" target="_blank"></a>
