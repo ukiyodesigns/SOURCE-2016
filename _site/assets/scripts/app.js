@@ -488,31 +488,31 @@ var counters = [];
 
 
     labels[0] = "Client Services ";
-    financials[0] = 24103;
+    financials[0] = 34125;
     bgColor[0] = "#4e8fa9";
     bgHover[0] = "#bff2ff";
-    counters[0] = new CountUp("Client Services", 0, 24103, 0, 2, countOptions);
+    counters[0] = new CountUp("Client Services", 0, 34125, 0, 2, countOptions);
     
 
     labels[1] = "Student Development ";
-    financials[1] = 3810;
+    financials[1] = 2140;
     bgColor[1] = "#315a69";
     bgHover[1] = "#bff2ff";
-    counters[1] = new CountUp("Student Development", 0, 3810, 0, 2, countOptions);
+    counters[1] = new CountUp("Student Development", 0, 2140, 0, 2, countOptions);
     
 
     labels[2] = "Culture ";
-    financials[2] = 1340;
+    financials[2] = 1680;
     bgColor[2] = "#2180ba";
     bgHover[2] = "#bff2ff";
-    counters[2] = new CountUp("Culture", 0, 1340, 0, 2, countOptions);
+    counters[2] = new CountUp("Culture", 0, 1680, 0, 2, countOptions);
     
 
     labels[3] = "Internal Projects ";
-    financials[3] = 1500;
+    financials[3] = 1599;
     bgColor[3] = "#54c0e9";
     bgHover[3] = "#bff2ff";
-    counters[3] = new CountUp("Internal Projects", 0, 1500, 0, 2, countOptions);
+    counters[3] = new CountUp("Internal Projects", 0, 1599, 0, 2, countOptions);
     
 
 var data = {
