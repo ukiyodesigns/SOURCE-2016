@@ -435,23 +435,23 @@ $(document).ready(function() {
  
 });
 // social-sharing
-var hostSite = "2015.sourcenonprofitconsulting.org";
+var hostSite = "2016.sourcenonprofitconsulting.org";
 $("#share-client-spotlight").jsSocials({
     url: "http://" + hostSite + "/client-spotlight",
-    text: "SOURCE Client Spotlight - CTEC",
+    text: "SOURCE Client Spotlight - Pacific Lifeline",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
     
 });
 $("#share-symposium").jsSocials({
     url: "http://" + hostSite + "/symposium",
-    text: "SOURCE Symposium 2016",
+    text: "Review of Our Second SOURCE Symposium",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
 });
 $("#share-brownbags").jsSocials({
     url: "http://" + hostSite + "/brownbags",
-    text: "SOURCE Nonprofit Brownbags",
+    text: "Relaunching Nonprofit Brownbags",
     shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
     showCount: false
 });
