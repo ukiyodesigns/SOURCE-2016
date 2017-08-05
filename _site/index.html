@@ -50,6 +50,18 @@
 <!-- END FAVICON -->
 </head>
 <!-- END HEAD -->
+<style>
+    .clients-v1-img {
+        opacity: 1;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+    }
+
+    .clients-v1-img:hover {
+        opacity: 0.5;
+    }
+</style>
 <!-- BODY -->
 <body class="">
 <div id="loader-wrapper">
@@ -414,7 +426,7 @@
                             <div class="margin-b-5">
                                 <figure class="counter counters-v1-number">125</figure>
                             </div>
-                            <h4 class="counters-v1-title">client wonk hours per consultant</h4>
+                            <h4 class="counters-v1-title">client work hours per consultant</h4>
                         </div>
                         <!-- End Counters v1 -->
                     </div>
@@ -696,7 +708,7 @@
                             </div>
                         </div>
                         <!-- End Heading v1 -->
-                        <p>Pacific Lifeline is much more than a homeless shelter. After spending the fall semester off-campus, I entered our client relationship halfway through the year . This transition initially appeared challenging, but Pacific Lifeline’s mission, history, and energy made the process seamless. In the end, through our year-long partnership, our team was able to help Pacific Lifeline increase the efficiency of its mission through our work on strategically planning, board development, and web development.</p>
+                        <p>Pacific Lifeline is much more than a homeless shelter. After spending the fall semester off-campus, I entered our client relationship halfway through the year . This transition initially appeared challenging, but Pacific Lifeline’s mission, history, and energy made the process seamless. In the end, through our year-long partnership, our team was able to help Pacific Lifeline increase the efficiency of its mission through our work on strategic planning, board development, and web development.</p>
                         <a id="client-spotlight-button" href="#client-spotlight-modal" onClick="ga('send', 'event', 'Articles', 'Click', 'Client Spotlight');"><button type="button" class="btn-read-more btn-black-border btn-base-sm">Read More</button></a>
                         
                     </div>
@@ -731,7 +743,7 @@
             <div class="content-md container-sm">
                 <!-- Heading v1 -->
                 <div class="heading-v1 text-center margin-b-80">
-                    <h2 class="heading-v1-title">Nonprofit Lunch and Learn May 2017</h2>
+                    <h2 class="heading-v1-title">Nonprofit Lunch and Learns</h2>
                     <p class="heading-v1-text">Continually improving our community initiatives</p>
                 </div>
                 <!-- End Heading v1 -->
@@ -740,7 +752,7 @@
                     <div class="col-sm-6 col-sm-push-6 sm-margin-b-30">
                         <!-- Heading v1 -->
                         <div class="heading-v1 margin-b-15">
-                            <h2 class="heading-v1-title">Our Successful Relaunch of Nonprofit Lunch and Learn</h2>
+                            <h2 class="heading-v1-title">Our Successful Relaunch of Nonprofit Lunch and Learns</h2>
                             <p class="heading-v1-subtitle">By Megan Tankersley</p>
                             <div id="brownbags-modal-time" class="read-time">
                                 <div>
@@ -783,7 +795,7 @@
             <div class="content-md container-sm separation">
                 <!-- Heading v1 -->
                 <div class="heading-v1 text-center margin-b-80">
-                    <h2 class="heading-v1-title">A Review of our Second Annual SOURCE Symposium</h2>
+                    <h2 class="heading-v1-title">SOURCE Symposium 2017</h2>
                     <p class="heading-v1-text">A celebration of our community impact</p>
                 </div>
                 <!-- End Heading v1 -->
@@ -792,7 +804,7 @@
                     <div class="col-sm-6 sm-margin-b-30">
                         <!-- Heading v1 -->
                         <div class="heading-v1 margin-b-15">
-                            <h2 class="heading-v1-title">A Review of Our First Ever SOURCE Symposium</h2>
+                            <h2 class="heading-v1-title">A Review of Our Second Annual SOURCE Symposium</h2>
                             <p class="heading-v1-subtitle">By Lili Muskal</p>
                             <div id="symposium-modal-time" class="read-time">
                                 <div>  
@@ -941,7 +953,7 @@
             <div class="content-md container-sm">
                 <!-- Heading v1 -->
                 <div class="heading-v1 text-center margin-b-80">
-                    <h2 class="heading-v1-title">SOURCE Seniors 2016</h2>
+                    <h2 class="heading-v1-title">SOURCE Seniors 2017</h2>
                     <p class="heading-v1-text">Celebrating our graduating seniors and their post-graduation plans</p>
                 </div>
                 <!-- End Heading v1 -->
@@ -955,7 +967,9 @@
                             
                                 <div class="row senior-row-padding">
                             
-                            <div class="col-xs-6 xs-full-width">
+                            
+                            <div class="col-xs-4 xs-full-width">
+                            
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
@@ -967,6 +981,7 @@
                                                 <h4 class="team-v2-member">Anna Shephard</h4>
                                                 <span class="team-v2-member-position">Lead Consultant</span>
                                                 <span class="team-v2-member-position">IVRT</span>
+                                                <br>
                                                 <span class="team-v2-member-position">Washington D.C.</span>
                                             </div>
                                         </div>
@@ -979,7 +994,9 @@
                         
                             
                             
-                            <div class="col-xs-6 xs-full-width">
+                            
+                            <div class="col-xs-4 xs-full-width">
+                            
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
@@ -991,6 +1008,7 @@
                                                 <h4 class="team-v2-member">Anna Zimmerman</h4>
                                                 <span class="team-v2-member-position">Managing Lead Consultant</span>
                                                 <span class="team-v2-member-position">CLASP</span>
+                                                <br>
                                                 <span class="team-v2-member-position">Boston Consulting Group</span>
                                             </div>
                                         </div>
@@ -999,15 +1017,13 @@
                                 </div>
                             </div>
                             
-                                </div>
-                            
                             
                         
                             
                             
-                                <div class="row senior-row-padding">
                             
-                            <div class="col-xs-6 xs-full-width">
+                            <div class="col-xs-4 xs-full-width">
+                            
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
@@ -1019,34 +1035,11 @@
                                                 <h4 class="team-v2-member">Ben Fusek</h4>
                                                 <span class="team-v2-member-position">Consultant</span>
                                                 <span class="team-v2-member-position">Ophelia's Jump</span>
+                                                <br>
                                                 <span class="team-v2-member-position">Mercer</span>
                                             </div>
                                         </div>
                                         <a class="team-v2-link" href="https://www.linkedin.com/in/benfusek/" target="_blank"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        
-                            
-                            
-                            <div class="col-xs-6 xs-full-width">
-                                <div class="overflow-h">
-                                    <!-- Team v2 -->
-                                    <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
-                                        <div class="team-v2-img-gradient">
-                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/headshots/seniors/Eliana.jpg" alt="">
-                                        </div>
-                                        <div class="team-v2-content">
-                                            <div class="team-v2-center-align">
-                                                <h4 class="team-v2-member">Eliana Keinan</h4>
-                                                <span class="team-v2-member-position">Advisor</span>
-                                                <span class="team-v2-member-position">Foothill Family Shelter</span>
-                                                <span class="team-v2-member-position">Deloitte</span>
-                                            </div>
-                                        </div>
-                                        <a class="team-v2-link" href="https://www.linkedin.com/in/eliana-keinan-74949286/" target="_blank"></a>
                                     </div>
                                 </div>
                             </div>
@@ -1059,7 +1052,36 @@
                             
                                 <div class="row senior-row-padding">
                             
-                            <div class="col-xs-6 xs-full-width">
+                            
+                            <div class="col-xs-4 xs-full-width">
+                            
+                                <div class="overflow-h">
+                                    <!-- Team v2 -->
+                                    <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
+                                        <div class="team-v2-img-gradient">
+                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/headshots/seniors/Eliana.jpg" alt="">
+                                        </div>
+                                        <div class="team-v2-content">
+                                            <div class="team-v2-center-align">
+                                                <h4 class="team-v2-member">Eliana Keinan</h4>
+                                                <span class="team-v2-member-position">Advisor</span>
+                                                <span class="team-v2-member-position">Foothill Family Shelter</span>
+                                                <br>
+                                                <span class="team-v2-member-position">Deloitte</span>
+                                            </div>
+                                        </div>
+                                        <a class="team-v2-link" href="https://www.linkedin.com/in/eliana-keinan-74949286/" target="_blank"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        
+                            
+                            
+                            
+                            <div class="col-xs-4 xs-full-width">
+                            
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
@@ -1071,6 +1093,7 @@
                                                 <h4 class="team-v2-member">Emily Carlson</h4>
                                                 <span class="team-v2-member-position">Lead Consultant</span>
                                                 <span class="team-v2-member-position">Pacific Lifeline</span>
+                                                <br>
                                                 <span class="team-v2-member-position">Amgen</span>
                                             </div>
                                         </div>
@@ -1083,7 +1106,9 @@
                         
                             
                             
-                            <div class="col-xs-6 xs-full-width">
+                            
+                            <div class="col-xs-4 xs-full-width">
+                            
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
@@ -1095,6 +1120,7 @@
                                                 <h4 class="team-v2-member">George Vojita</h4>
                                                 <span class="team-v2-member-position">Advisor</span>
                                                 <span class="team-v2-member-position">Ophelia's Jump</span>
+                                                <br>
                                                 <span class="team-v2-member-position">Columbia University</span>
                                             </div>
                                         </div>
@@ -1111,7 +1137,9 @@
                             
                                 <div class="row senior-row-padding">
                             
-                            <div class="col-xs-6 xs-full-width">
+                            
+                            <div class="col-xs-4 xs-full-width">
+                            
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
@@ -1123,6 +1151,7 @@
                                                 <h4 class="team-v2-member">Lane Corrigan</h4>
                                                 <span class="team-v2-member-position">Advisor</span>
                                                 <span class="team-v2-member-position">Sustainable Claremont</span>
+                                                <br>
                                                 <span class="team-v2-member-position">Washington D.C.</span>
                                             </div>
                                         </div>
@@ -1135,7 +1164,9 @@
                         
                             
                             
-                            <div class="col-xs-6 xs-full-width">
+                            
+                            <div class="col-xs-4 xs-full-width">
+                            
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
@@ -1147,10 +1178,38 @@
                                                 <h4 class="team-v2-member">Mattheiu Hafemeister</h4>
                                                 <span class="team-v2-member-position">Lead Consultant</span>
                                                 <span class="team-v2-member-position">Foothill Family Shelter</span>
+                                                <br>
                                                 <span class="team-v2-member-position">Andreessen Horowitz </span>
                                             </div>
                                         </div>
                                         <a class="team-v2-link" href="https://www.linkedin.com/in/matthieu-hafemeister-52268049/" target="_blank"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        
+                            
+                            
+                            
+                            <div class="col-xs-4 xs-full-width">
+                            
+                                <div class="overflow-h">
+                                    <!-- Team v2 -->
+                                    <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
+                                        <div class="team-v2-img-gradient">
+                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/headshots/seniors/Ramon.jpg" alt="">
+                                        </div>
+                                        <div class="team-v2-content">
+                                            <div class="team-v2-center-align">
+                                                <h4 class="team-v2-member">Ramon Gomez</h4>
+                                                <span class="team-v2-member-position">Consultant</span>
+                                                <span class="team-v2-member-position">Meals on Wheels</span>
+                                                <br>
+                                                <span class="team-v2-member-position">McMaster-Carr</span>
+                                            </div>
+                                        </div>
+                                        <a class="team-v2-link" href="https://www.linkedin.com/in/rgomez17/" target="_blank"></a>
                                     </div>
                                 </div>
                             </div>
@@ -1163,31 +1222,9 @@
                             
                                 <div class="row senior-row-padding">
                             
-                            <div class="col-xs-6 xs-full-width">
-                                <div class="overflow-h">
-                                    <!-- Team v2 -->
-                                    <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
-                                        <div class="team-v2-img-gradient">
-                                            <img class="lazy-no-transition img-responsive" src="assets/img/bg.png" data-src="assets/img/SOURCE/headshots/seniors/Ramon.jpg" alt="">
-                                        </div>
-                                        <div class="team-v2-content">
-                                            <div class="team-v2-center-align">
-                                                <h4 class="team-v2-member">Ramon Gomez</h4>
-                                                <span class="team-v2-member-position">Consultant</span>
-                                                <span class="team-v2-member-position">Meals on Wheels</span>
-                                                <span class="team-v2-member-position">McMaster-Carr</span>
-                                            </div>
-                                        </div>
-                                        <a class="team-v2-link" href="https://www.linkedin.com/in/rgomez17/" target="_blank"></a>
-                                    </div>
-                                </div>
-                            </div>
                             
+                            <div class="col-xs-4 col-xs-offset-4 xs-full-width">
                             
-                        
-                            
-                            
-                            <div class="col-xs-6 xs-full-width">
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
@@ -1199,6 +1236,7 @@
                                                 <h4 class="team-v2-member">Vanessa Liu</h4>
                                                 <span class="team-v2-member-position">Manager</span>
                                                 <span class="team-v2-member-position"></span>
+                                                <br>
                                                 <span class="team-v2-member-position">Boston Consulting Group</span>
                                             </div>
                                         </div>
@@ -1206,8 +1244,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                                </div>
                             
                             
                         
@@ -1232,52 +1268,54 @@
                     </div>
                     <div class="col-md-8">
                         <!-- Owl Carousel Clients Five Item -->
-                        <ul class="list-inline owl-carousel-clients-five-item clients-v1">
+                        <ul class="list-inline owl-carousel-clients-four-item clients-v1">
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://www.claremontheritage.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/CLASPlogo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://www.everybodydancenow.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/IVRTlogo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="https://www.tierradelsol.org/programs/1st-street-gallery-art-center/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/MOWlogo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="https://www.foothillfamilyshelter.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/foothill-family-shelter-logo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
+                        </ul>
+                        <ul class="list-inline owl-carousel-clients-three-item clients-v1">
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://sustainableclaremont.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/sustainable-claremont-logo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://www.tbipomona.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/OJlogo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://www.tlcfairplex.org/ctec/home" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/PLLlogo.jpg" alt="">
                                     </a>
                                 </div>
@@ -1466,7 +1504,7 @@
                         </div>
                         <div class="col-sm-5 margin-t-50 text-right">
                             <a href="javascript:void(0);" class="js-back-to-top back-to-top-theme"></a>
-                            <a href="http://ukiyodesigns.github.io"><p class="footer-v7-text">&#169; 2016 Ukiyo Designs.</p></a>
+                            <a href="http://kcunanan.com"><p class="footer-v7-text">&#169; 2017 Kevin Cunanan.</p></a>
                         </div>
                     </div>
                     <!--// end row -->

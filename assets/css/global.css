@@ -20347,13 +20347,9 @@ fieldset[disabled] .btn-ig-bg {
 }
 
 .clients-v1 .clients-v1-item .clients-v1-img-default {
-  opacity: 1;
   position: absolute;
   top: 0;
   left: 0;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 .clients-v1 .clients-v1-item .clients-v1-img-active {
@@ -20366,12 +20362,12 @@ fieldset[disabled] .btn-ig-bg {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.clients-v1 .clients-v1-item:hover .clients-v1-img-default {
+/* .clients-v1 .clients-v1-item:hover .clients-v1-img-default {
   border-radius: 100px;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
+} */
 
 .clients-v1 .clients-v1-item:hover .clients-v1-img-active {
   opacity: 1;

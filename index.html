@@ -29,6 +29,18 @@
 <!-- END FAVICON -->
 </head>
 <!-- END HEAD -->
+<style>
+    .clients-v1-img {
+        opacity: 1;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
+    }
+
+    .clients-v1-img:hover {
+        opacity: 0.5;
+    }
+</style>
 <!-- BODY -->
 <body class="">
 <div id="loader-wrapper">
@@ -321,7 +333,7 @@
                             <div class="margin-b-5">
                                 <figure class="counter counters-v1-number">125</figure>
                             </div>
-                            <h4 class="counters-v1-title">client wonk hours per consultant</h4>
+                            <h4 class="counters-v1-title">client work hours per consultant</h4>
                         </div>
                         <!-- End Counters v1 -->
                     </div>
@@ -603,7 +615,7 @@
                             </div>
                         </div>
                         <!-- End Heading v1 -->
-                        <p>Pacific Lifeline is much more than a homeless shelter. After spending the fall semester off-campus, I entered our client relationship halfway through the year . This transition initially appeared challenging, but Pacific Lifeline’s mission, history, and energy made the process seamless. In the end, through our year-long partnership, our team was able to help Pacific Lifeline increase the efficiency of its mission through our work on strategically planning, board development, and web development.</p>
+                        <p>Pacific Lifeline is much more than a homeless shelter. After spending the fall semester off-campus, I entered our client relationship halfway through the year . This transition initially appeared challenging, but Pacific Lifeline’s mission, history, and energy made the process seamless. In the end, through our year-long partnership, our team was able to help Pacific Lifeline increase the efficiency of its mission through our work on strategic planning, board development, and web development.</p>
                         <a id="client-spotlight-button" href="#client-spotlight-modal" onClick="ga('send', 'event', 'Articles', 'Click', 'Client Spotlight');"><button type="button" class="btn-read-more btn-black-border btn-base-sm">Read More</button></a>
                         
                     </div>
@@ -638,7 +650,7 @@
             <div class="content-md container-sm">
                 <!-- Heading v1 -->
                 <div class="heading-v1 text-center margin-b-80">
-                    <h2 class="heading-v1-title">Nonprofit Lunch and Learn May 2017</h2>
+                    <h2 class="heading-v1-title">Nonprofit Lunch and Learns</h2>
                     <p class="heading-v1-text">Continually improving our community initiatives</p>
                 </div>
                 <!-- End Heading v1 -->
@@ -647,7 +659,7 @@
                     <div class="col-sm-6 col-sm-push-6 sm-margin-b-30">
                         <!-- Heading v1 -->
                         <div class="heading-v1 margin-b-15">
-                            <h2 class="heading-v1-title">Our Successful Relaunch of Nonprofit Lunch and Learn</h2>
+                            <h2 class="heading-v1-title">Our Successful Relaunch of Nonprofit Lunch and Learns</h2>
                             <p class="heading-v1-subtitle">By Megan Tankersley</p>
                             <div id="brownbags-modal-time" class="read-time">
                                 <div>
@@ -690,7 +702,7 @@
             <div class="content-md container-sm separation">
                 <!-- Heading v1 -->
                 <div class="heading-v1 text-center margin-b-80">
-                    <h2 class="heading-v1-title">A Review of our Second Annual SOURCE Symposium</h2>
+                    <h2 class="heading-v1-title">SOURCE Symposium 2017</h2>
                     <p class="heading-v1-text">A celebration of our community impact</p>
                 </div>
                 <!-- End Heading v1 -->
@@ -699,7 +711,7 @@
                     <div class="col-sm-6 sm-margin-b-30">
                         <!-- Heading v1 -->
                         <div class="heading-v1 margin-b-15">
-                            <h2 class="heading-v1-title">A Review of Our First Ever SOURCE Symposium</h2>
+                            <h2 class="heading-v1-title">A Review of Our Second Annual SOURCE Symposium</h2>
                             <p class="heading-v1-subtitle">By Lili Muskal</p>
                             <div id="symposium-modal-time" class="read-time">
                                 <div>  
@@ -795,7 +807,7 @@
             <div class="content-md container-sm">
                 <!-- Heading v1 -->
                 <div class="heading-v1 text-center margin-b-80">
-                    <h2 class="heading-v1-title">SOURCE Seniors 2016</h2>
+                    <h2 class="heading-v1-title">SOURCE Seniors 2017</h2>
                     <p class="heading-v1-text">Celebrating our graduating seniors and their post-graduation plans</p>
                 </div>
                 <!-- End Heading v1 -->
@@ -805,11 +817,15 @@
                         <!-- End Team v2 -->
                         {% assign count = 1 %}
                         {% for senior in site.data.seniors2017 %}
-                            {% assign check = count | modulo:2 %}
+                            {% assign check = count | modulo:3 %}
                             {% if check == 1 %}
                                 <div class="row senior-row-padding">
                             {% endif %}
-                            <div class="col-xs-6 xs-full-width">
+                            {% if count == 10 %}
+                            <div class="col-xs-4 col-xs-offset-4 xs-full-width">
+                            {% else %}
+                            <div class="col-xs-4 xs-full-width">
+                            {% endif %}
                                 <div class="overflow-h">
                                     <!-- Team v2 -->
                                     <div class="team-v2 wow fadeIn" data-wow-duration=".2" data-wow-delay=".2s">
@@ -821,6 +837,7 @@
                                                 <h4 class="team-v2-member">{{ senior.name }}</h4>
                                                 <span class="team-v2-member-position">{{ senior.position }}</span>
                                                 <span class="team-v2-member-position">{{ senior.team }}</span>
+                                                <br>
                                                 <span class="team-v2-member-position">{{ senior.company }}</span>
                                             </div>
                                         </div>
@@ -854,52 +871,54 @@
                     </div>
                     <div class="col-md-8">
                         <!-- Owl Carousel Clients Five Item -->
-                        <ul class="list-inline owl-carousel-clients-five-item clients-v1">
+                        <ul class="list-inline owl-carousel-clients-four-item clients-v1">
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://www.claremontheritage.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/CLASPlogo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://www.everybodydancenow.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/IVRTlogo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="https://www.tierradelsol.org/programs/1st-street-gallery-art-center/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/MOWlogo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="https://www.foothillfamilyshelter.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/foothill-family-shelter-logo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
+                        </ul>
+                        <ul class="list-inline owl-carousel-clients-three-item clients-v1">
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://sustainableclaremont.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/sustainable-claremont-logo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://www.tbipomona.org/" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/OJlogo.jpg" alt="">
                                     </a>
                                 </div>
                             </li>
                             <li class="item client-item-padding">
                                 <div class="clients-v1-item">
-                                    <a href="http://www.tlcfairplex.org/ctec/home" target="_blank">
+                                    <a>
                                         <img class="clients-v1-img clients-v1-img-default" src="/assets/img/SOURCE/clients/PLLlogo.jpg" alt="">
                                     </a>
                                 </div>
