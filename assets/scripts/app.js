@@ -425,6 +425,7 @@ $(document).ready(function() {
     });
 });
 // loading finished
+$('#loader-wrapper').on('touchmove', false);
 $(document).ready(function() {
  
     setTimeout(function(){
@@ -489,7 +490,6 @@ var counters = [];
     financials[{{ count }}] = {{ fund.data }};
     bgColor[{{ count }}] = "{{ fund.color }}";
     bgHover[{{ count }}] = "{{ fund.hover }}";
-    counters[{{ count }}] = new CountUp("{{ fund.label }}", 0, {{ fund.data }}, 0, 2, countOptions);
     {% assign count = count | plus:1 %}
 {% endfor %}
 var data = {
