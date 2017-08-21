@@ -426,13 +426,16 @@ $(document).ready(function() {
 });
 // loading finished
 $('#loader-wrapper').on('touchmove', false);
-$(document).ready(function() {
- 
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 6000);
- 
-});
+document.onreadystatechange = function () {
+  let state = document.readyState
+  if (state == 'interactive') {
+       
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         $('body').addClass('loaded');
+      },6000);
+  }
+}
 // social-sharing
 var hostSite = "2016.sourcenonprofitconsulting.org";
 $("#share-client-spotlight").jsSocials({
